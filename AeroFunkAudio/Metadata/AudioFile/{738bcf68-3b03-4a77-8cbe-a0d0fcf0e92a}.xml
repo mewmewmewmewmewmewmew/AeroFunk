@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{738bcf68-3b03-4a77-8cbe-a0d0fcf0e92a}">
+		<property name="assetPath">
+			<value>RKU_SBM_130_synth_pad_loop_unfold_wet_Cmin.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>14.769229024943311</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ec9b4be-21b2-437c-b1b2-580384c34a74}</destination>
+		</relationship>
+	</object>
+</objects>

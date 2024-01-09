@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{742eb1be-f5c1-4b62-8075-5f108d040aa3}">
+		<property name="assetPath">
+			<value>ESM_Deep_Engine_Flutter_Passby_Animation_Particle_Swish_Swoosh_Accent_Logo_Sci_Fi_Futuristic_Alien_UFO_Craft_Rocket_Shuttle.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.280204081632653</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ec9b4be-21b2-437c-b1b2-580384c34a74}</destination>
+		</relationship>
+	</object>
+</objects>
