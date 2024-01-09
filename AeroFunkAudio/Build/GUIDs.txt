@@ -1,0 +1,11 @@
+{b2ccd63d-1815-44c9-b5e0-13630c0ed5c0} bank:/Master
+{2ad1f6e9-696e-088b-33a9-999dfdfdd358} bank:/Master.strings
+{b36a847c-21ad-40a5-8675-911ec6e8b090} bus:/
+{bd7d13f7-d909-4b41-95e0-6236d8068b2f} bus:/Game
+{89832efa-eee1-4415-b579-0c3d80f503e7} bus:/Music
+{0d01390d-bcdf-4fff-8663-c0351e02e26a} bus:/Reverb
+{f939cebd-4354-4c60-8bf4-e50913cb225a} bus:/UI
+{a8942c15-c947-4155-9da6-58ea82e0ebf7} event:/Engine
+{82e5b3f9-2a79-44b1-a136-5d7dc35f7fd0} event:/SoundTrack
+{34f9451a-f070-42c3-a921-03af3d153ddb} event:/UI Tick
+{d8cb8cdf-e0fb-4599-9ba2-a1ae4c9778fa} parameter:/AcceleratorState

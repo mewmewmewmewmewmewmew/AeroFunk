@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{5c730118-29a5-4adb-8bad-10c4eb3f656e}">
+		<property name="name">
+			<value>AcceleratorState</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9696c8bf-db80-4b32-aa16-c3e6db1dcd99}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d8cb8cdf-e0fb-4599-9ba2-a1ae4c9778fa}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d8cb8cdf-e0fb-4599-9ba2-a1ae4c9778fa}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Halted</value>
+			<value>Accelerating</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
