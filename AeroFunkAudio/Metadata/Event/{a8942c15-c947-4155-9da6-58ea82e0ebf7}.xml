@@ -66,7 +66,20 @@
 			<destination>{bd7d13f7-d909-4b41-95e0-6236d8068b2f}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{e5632664-5c0e-4777-9f96-77cd84e67662}" />
+	<object class="EventAutomatableProperties" id="{e5632664-5c0e-4777-9f96-77cd84e67662}">
+		<property name="maxVoices">
+			<value>9</value>
+		</property>
+		<property name="voiceStealing">
+			<value>1</value>
+		</property>
+		<property name="priority">
+			<value>4</value>
+		</property>
+		<property name="dopplerEnabled">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{316c693f-431f-4829-af71-46f908d9f38f}" />
 	<object class="GroupTrack" id="{ddab8ea6-e5a7-49c2-b264-69752190976d}">
 		<relationship name="automationTracks">
@@ -424,7 +437,7 @@
 			<value>3.3500000000000001</value>
 		</property>
 		<property name="length">
-			<value>4.75</value>
+			<value>2.6500000000000021</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{9e078198-1c19-4fd8-9924-5fc1f8d5dbdc}</destination>
