@@ -1,5 +1,106 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8861058748071868665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack
+  Guid:
+    Data1: -2098875399
+    Data2: 1152461433
+    Data3: 2103260833
+    Data4: -796958781
+  Banks:
+  - {fileID: 2222118984333922473}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 61444
+--- !u!114 &-5284204855075135871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Engine
+  m_EditorClassIdentifier: 
+  Path: event:/Engine
+  Guid:
+    Data1: -1466684395
+    Data2: 1096141127
+    Data3: -363288931
+    Data4: -135536510
+  Banks:
+  - {fileID: 2222118984333922473}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -157824577885212409}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &-3595845133231223796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../OneDrive/Documents/Jame-Gam/AeroFunk/AeroFunkAudio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638404434624895247
+  FileSizes:
+  - Name: Desktop
+    Value: 1060
+  Exists: 1
+--- !u!114 &-157824577885212409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Engine/AcceleratorState
+  m_EditorClassIdentifier: 
+  Name: AcceleratorState
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2432709012
+    data2: 1110307023
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Halted
+  - Accelerating
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +113,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: -3595845133231223796}
+  - {fileID: 2222118984333922473}
+  EditorEvents:
+  - {fileID: -5284204855075135871}
+  - {fileID: -8861058748071868665}
+  - {fileID: 3113042958072048359}
+  - {fileID: 335172922955786946}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: 2222118984333922473}
+  StringsBanks:
+  - {fileID: -3595845133231223796}
+  cacheTime: 638404434624895247
   cacheVersion: 131609
+--- !u!114 &335172922955786946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SideBurst
+  m_EditorClassIdentifier: 
+  Path: event:/SideBurst
+  Guid:
+    Data1: 401148202
+    Data2: 1128074653
+    Data3: -697786701
+    Data4: 227163163
+  Banks:
+  - {fileID: 2222118984333922473}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1065
+--- !u!114 &2222118984333922473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../OneDrive/Documents/Jame-Gam/AeroFunk/AeroFunkAudio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638404434624885042
+  FileSizes:
+  - Name: Desktop
+    Value: 3990624
+  Exists: 1
+--- !u!114 &3113042958072048359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI Tick
+  m_EditorClassIdentifier: 
+  Path: event:/UI Tick
+  Guid:
+    Data1: 888751386
+    Data2: 1120137328
+    Data3: -1358749271
+    Data4: -616753859
+  Banks:
+  - {fileID: 2222118984333922473}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1022

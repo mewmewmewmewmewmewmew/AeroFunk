@@ -7,6 +7,7 @@ using UnityEngine;
 public class AudioPeer : MonoBehaviour
 {
     AudioSource _audioSource;
+
     public static float[] _samples = new float[512];
     public static float[] _freqBand = new float[8];
     public static float[] _bandBuffer = new float[8];
@@ -18,6 +19,7 @@ public class AudioPeer : MonoBehaviour
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
