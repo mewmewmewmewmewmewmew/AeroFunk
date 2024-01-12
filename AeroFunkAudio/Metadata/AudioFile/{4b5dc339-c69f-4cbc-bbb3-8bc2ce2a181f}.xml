@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4b5dc339-c69f-4cbc-bbb3-8bc2ce2a181f}">
+		<property name="assetPath">
+			<value>SS_FIP_104_fx_loop_kit07_bjorn_happy_crowd_cheering_g.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>18.461541950113379</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ec9b4be-21b2-437c-b1b2-580384c34a74}</destination>
+		</relationship>
+	</object>
+</objects>

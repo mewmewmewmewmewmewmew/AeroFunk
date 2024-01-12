@@ -57,16 +57,14 @@ public class PlayerControls : MonoBehaviour
         // Get mouse delta movement
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
-        float joyStickX = Input.GetAxis("HorizontalR");
+        float joyStickX = Input.GetAxis("Horizontal");
 
 
         // Rotate the object based on mouse movement
-        RotateObject(mouseX, mouseY);
+        RotateObject(joyStickX, mouseY);
 
 
     }
-
-    bool alignedToGround = false;
 
     void Update()
     {
@@ -99,6 +97,7 @@ public class PlayerControls : MonoBehaviour
 
 
     }
+
     void RotateObject(float mouseX, float mouseY)
     {
         // Adjust rotation angles based on mouse movement

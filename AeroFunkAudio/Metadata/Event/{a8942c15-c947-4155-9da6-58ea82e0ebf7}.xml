@@ -5,7 +5,7 @@
 			<value>Engine</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6adc8381-3337-43ed-a9ba-6030b9ee7091}</destination>
@@ -82,6 +82,9 @@
 		</property>
 		<property name="dopplerEnabled">
 			<value>true</value>
+		</property>
+		<property name="maximumDistance">
+			<value>80</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{4de221ca-1141-4a32-819c-850b67756532}" />
@@ -790,6 +793,7 @@
 	<object class="MixerBusEffectChain" id="{4abc5c21-dc64-4eca-b285-3c954d098846}">
 		<relationship name="effects">
 			<destination>{cac4b2d6-52dd-4072-8782-a3a6d3676d7c}</destination>
+			<destination>{226d16f1-75e2-40c9-b8e7-c320854b1b57}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{390b6fe0-2f1e-4701-875a-13222d10c758}" />
@@ -1201,6 +1205,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{cac4b2d6-52dd-4072-8782-a3a6d3676d7c}" />
+	<object class="SpatialiserEffect" id="{226d16f1-75e2-40c9-b8e7-c320854b1b57}" />
 	<object class="AutomationPoint" id="{fafa4860-8d19-4cce-85e5-8afff494d390}">
 		<property name="position">
 			<value>0</value>

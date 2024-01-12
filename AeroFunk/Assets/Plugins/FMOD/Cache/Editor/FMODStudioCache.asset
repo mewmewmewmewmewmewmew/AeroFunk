@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 2103260833
     Data4: -796958781
   Banks:
-  - {fileID: 2222118984333922473}
+  - {fileID: -510259604903283571}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -46,16 +46,97 @@ MonoBehaviour:
     Data3: -363288931
     Data4: -135536510
   Banks:
-  - {fileID: 2222118984333922473}
+  - {fileID: -510259604903283571}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: -157824577885212409}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 80
   Length: 6000
---- !u!114 &-3595845133231223796
+--- !u!114 &-5086021587858779894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AdvertizementLoop
+  m_EditorClassIdentifier: 
+  Path: event:/AdvertizementLoop
+  Guid:
+    Data1: 1320388121
+    Data2: 1165704006
+    Data3: 1393297083
+    Data4: -448659651
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 60133
+--- !u!114 &-4944868868210901872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment
+  m_EditorClassIdentifier: 
+  Path: event:/Environment
+  Guid:
+    Data1: 2116122738
+    Data2: 1119400700
+    Data3: -234341219
+    Data4: -891276361
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 70240
+--- !u!114 &-2973407349103027101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RadioAnouncementLoop
+  m_EditorClassIdentifier: 
+  Path: event:/RadioAnouncementLoop
+  Guid:
+    Data1: 793874068
+    Data2: 1336752300
+    Data3: -1547209034
+    Data4: 1439384694
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 28872
+--- !u!114 &-510259604903283571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,15 +146,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../../OneDrive/Documents/Jame-Gam/AeroFunk/AeroFunkAudio/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638404434624895247
+  Path: ../AeroFunkAudio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638406264320898515
   FileSizes:
   - Name: Desktop
-    Value: 1060
+    Value: 8050208
   Exists: 1
 --- !u!114 &-157824577885212409
 MonoBehaviour:
@@ -114,19 +195,23 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3595845133231223796}
-  - {fileID: 2222118984333922473}
+  - {fileID: 1992302050951442078}
+  - {fileID: -510259604903283571}
   EditorEvents:
   - {fileID: -5284204855075135871}
   - {fileID: -8861058748071868665}
   - {fileID: 3113042958072048359}
   - {fileID: 335172922955786946}
+  - {fileID: -5086021587858779894}
+  - {fileID: -4944868868210901872}
+  - {fileID: -2973407349103027101}
+  - {fileID: 4706708384435925423}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2222118984333922473}
+  - {fileID: -510259604903283571}
   StringsBanks:
-  - {fileID: -3595845133231223796}
-  cacheTime: 638404434624895247
+  - {fileID: 1992302050951442078}
+  cacheTime: 638406264320908492
   cacheVersion: 131609
 --- !u!114 &335172922955786946
 MonoBehaviour:
@@ -147,7 +232,7 @@ MonoBehaviour:
     Data3: -697786701
     Data4: 227163163
   Banks:
-  - {fileID: 2222118984333922473}
+  - {fileID: -510259604903283571}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -155,7 +240,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1065
---- !u!114 &2222118984333922473
+--- !u!114 &1992302050951442078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,15 +250,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../../../OneDrive/Documents/Jame-Gam/AeroFunk/AeroFunkAudio/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638404434624885042
+  Path: ../AeroFunkAudio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638406264320908492
   FileSizes:
   - Name: Desktop
-    Value: 3990624
+    Value: 1292
   Exists: 1
 --- !u!114 &3113042958072048359
 MonoBehaviour:
@@ -194,7 +279,7 @@ MonoBehaviour:
     Data3: -1358749271
     Data4: -616753859
   Banks:
-  - {fileID: 2222118984333922473}
+  - {fileID: -510259604903283571}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -202,3 +287,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1022
+--- !u!114 &4706708384435925423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CrowdLoop
+  m_EditorClassIdentifier: 
+  Path: event:/CrowdLoop
+  Guid:
+    Data1: -626163722
+    Data2: 1316103540
+    Data3: -1697017947
+    Data4: 1496703207
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 3750

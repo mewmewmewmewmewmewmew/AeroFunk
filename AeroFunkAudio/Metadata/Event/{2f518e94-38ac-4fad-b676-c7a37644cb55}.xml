@@ -5,7 +5,7 @@
 			<value>RadioAnouncementLoop</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6adc8381-3337-43ed-a9ba-6030b9ee7091}</destination>
@@ -54,10 +54,17 @@
 			<destination>{fb4838f4-fd9b-4886-acc1-f110aefbac49}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{b36a847c-21ad-40a5-8675-911ec6e8b090}</destination>
+			<destination>{2c83377c-85d1-4237-ad48-b0a03ac1bbdb}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{321cf2a0-7a47-4609-aa36-e3b964840068}" />
+	<object class="EventAutomatableProperties" id="{321cf2a0-7a47-4609-aa36-e3b964840068}">
+		<property name="dopplerEnabled">
+			<value>true</value>
+		</property>
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{f6188fdc-098d-4fc9-ad9d-76e5584c9c85}" />
 	<object class="MarkerTrack" id="{c7773a6f-51cf-41da-9593-daaa7ea49c2a}" />
 	<object class="GroupTrack" id="{67521970-6cfe-466a-939b-0b8e4eab46dc}">
@@ -150,6 +157,7 @@
 	<object class="MixerBusEffectChain" id="{67a3a1a7-ecca-4526-9991-dd51abaca6bd}">
 		<relationship name="effects">
 			<destination>{f882df17-400c-41c9-9fee-df854e7ef2f7}</destination>
+			<destination>{1ac5f358-c0d0-485f-ad60-2ab4bd838dea}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{90c33778-00cb-4483-826d-41c889fd77c3}" />
@@ -161,5 +169,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{98ceac1e-71f5-4d14-a50a-0f30a137d58d}" />
 	<object class="MixerBusFader" id="{f882df17-400c-41c9-9fee-df854e7ef2f7}" />
+	<object class="SpatialiserEffect" id="{1ac5f358-c0d0-485f-ad60-2ab4bd838dea}" />
 	<object class="MixerBusFader" id="{5b969695-3a06-4fdb-92d6-8c9fe441f13f}" />
 </objects>

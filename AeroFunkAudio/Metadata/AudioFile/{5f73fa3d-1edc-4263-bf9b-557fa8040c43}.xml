@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5f73fa3d-1edc-4263-bf9b-557fa8040c43}">
+		<property name="assetPath">
+			<value>KSHMR_Crowd_Chant_Loop_06_Hey_Ho_134.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>14.328367346938775</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ec9b4be-21b2-437c-b1b2-580384c34a74}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f6eb8a20-1a37-490c-8694-bbfc4785a8d7}">
+		<property name="assetPath">
+			<value>tp_uukg_135_texture_loop_crowd.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.5555555555555554</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ec9b4be-21b2-437c-b1b2-580384c34a74}</destination>
+		</relationship>
+	</object>
+</objects>
