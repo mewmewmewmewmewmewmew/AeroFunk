@@ -366,6 +366,7 @@
 "Assets/Grid.cs"
 "Assets/LineHelper.cs"
 "Assets/LookAt.cs"
+"Assets/PerlinNoiseGen.cs"
 "Assets/PlayerControls.cs"
 "Assets/RotateOverTime.cs"
 "Assets/Shake.cs"
