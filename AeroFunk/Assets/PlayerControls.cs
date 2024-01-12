@@ -9,6 +9,10 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float _rSpeed;
     [SerializeField] float _sideBurst=5f;
     [SerializeField] float _sideCool;
+    [SerializeField] float _agFloat=1.3f;
+    [SerializeField] float _finOffset = 0.64f;
+
+
     Rigidbody _p;
 
     [SerializeField] GameObject _eng;
@@ -102,14 +106,26 @@ public class PlayerControls : MonoBehaviour
         float rotationY = mouseX * _rotationSpeed;
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit,20f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit))
         {
-            Vector3 newPos = transform.position;
-            newPos.y = (hit.point + Vector3.up * 1f).y;
-            transform.position = Vector3.Slerp(transform.position,newPos,.1f);
+            //try to make code where it's always just aiming to reach that certain range, instead of snapping to a certain position
+            if(hit.distance > _agFloat && hit.distance < _agFloat+1f)
+            {
+                Vector3 newPos = transform.position;
+                newPos.y = (hit.point + Vector3.up * _agFloat).y;
+                transform.position = Vector3.Slerp(transform.position, newPos, .1f);
+            }
+
+            if(hit.distance > _agFloat + 1f)
+            {
+                _p.AddForce(0f,(-200f) * Time.deltaTime,0f);
+            }
+
+
             var slopeRotation = Quaternion.FromToRotation(transform.up, hit.normal);
-            transform.rotation = Quaternion.Slerp(transform.rotation, slopeRotation * transform.rotation, 10 * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, slopeRotation * transform.rotation, 10f * Time.deltaTime);
         }
+
 
         // Apply the rotation to the object
         transform.Rotate(transform.up, rotationY * Time.deltaTime, Space.World);
@@ -129,8 +145,8 @@ public class PlayerControls : MonoBehaviour
             _flSet = 0f;
             _frSet = -.2f;
         }
-        _finL.transform.localPosition = Vector3.Slerp(_finL.transform.localPosition, new Vector3(_flSet, _finL.transform.localPosition.y, _finL.transform.localPosition.z), .1f);
-        _finR.transform.localPosition = Vector3.Slerp(_finR.transform.localPosition, new Vector3(_frSet, _finR.transform.localPosition.y, _finR.transform.localPosition.z), .1f);
+        _finL.transform.localPosition = Vector3.Slerp(_finL.transform.localPosition, new Vector3(_flSet, 0, _finOffset), .1f);
+        _finR.transform.localPosition = Vector3.Slerp(_finR.transform.localPosition, new Vector3(_frSet, 0, -_finOffset), .1f);
 
     }
 

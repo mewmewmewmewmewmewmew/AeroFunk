@@ -359,8 +359,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../OneDrive/Documents/Jame-Gam/AeroFunk/AeroFunkAudio/AeroFunkAudio.fspro
-  sourceBankPath: ../../../OneDrive/Documents/Jame-Gam/AeroFunk/AeroFunkAudio/Build
+  sourceProjectPath: ../AeroFunkAudio/AeroFunkAudio.fspro
+  sourceBankPath: ../AeroFunkAudio/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
