@@ -22,6 +22,7 @@ public class TubeDeformation : MonoBehaviour
         deformedVertices = new Vector3[originalVertices.Length];
     }
 
+
     void Update()
     {
         // Get the texture from the material
@@ -45,7 +46,7 @@ public class TubeDeformation : MonoBehaviour
 
         // Update the mesh with the deformed vertices
         mesh.vertices = deformedVertices;
-        mesh.RecalculateNormals();
+        //mesh.RecalculateNormals();
         mesh.RecalculateBounds();
     }
 }

@@ -159,6 +159,9 @@ public class PerlinNoiseGen : MonoBehaviour
         CalcNoise();
     }
 
+    //for each vertex in the list
+    //create a pillar
+    //rest of script functions normally
    
 }
 
