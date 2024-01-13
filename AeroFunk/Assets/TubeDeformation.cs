@@ -42,11 +42,13 @@ public class TubeDeformation : MonoBehaviour
 
             // Deform the vertex based on the normal and noise value
             deformedVertices[i] = vertex + normal * strength * noiseValue;
+
+            Debug.Log(normal.ToString() + ", " + uv.ToString()+ ", " + noiseValue);
         }
 
         // Update the mesh with the deformed vertices
         mesh.vertices = deformedVertices;
-        //mesh.RecalculateNormals();
-        mesh.RecalculateBounds();
+        mesh.RecalculateNormals();
+        //mesh.RecalculateBounds();
     }
 }

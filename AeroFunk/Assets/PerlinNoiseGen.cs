@@ -94,7 +94,7 @@ public class PerlinNoiseGen : MonoBehaviour
         {
             for (int y = 0; y < height/10; y++)
             {
-                Debug.Log(noiseTex.GetPixel(x, y).grayscale);
+                //Debug.Log(noiseTex.GetPixel(x, y).grayscale);
                 GameObject go = Instantiate(pillar);
                 pillarDictionary.Add(go, (new Vector2Int(x,y)));
                 go.transform.SetPositionAndRotation(new Vector3(x*spawnDistance, 0, y*spawnDistance), Quaternion.Euler(new Vector3(0, 45, 0)));
