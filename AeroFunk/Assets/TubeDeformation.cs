@@ -49,6 +49,6 @@ public class TubeDeformation : MonoBehaviour
         // Update the mesh with the deformed vertices
         mesh.vertices = deformedVertices;
         mesh.RecalculateNormals();
-        //mesh.RecalculateBounds();
+        mesh.RecalculateBounds();
     }
 }

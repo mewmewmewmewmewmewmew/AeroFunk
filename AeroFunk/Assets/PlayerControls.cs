@@ -38,6 +38,8 @@ public class PlayerControls : MonoBehaviour
 
     public TextMeshProUGUI _textSpeed;
 
+    bool _gravZone;
+
 
 
 
@@ -65,7 +67,22 @@ public class PlayerControls : MonoBehaviour
 
 
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        // Check if the entering collider has a specific tag
+        if (other.CompareTag("GravZone"))
+        {
+            _gravZone= true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        // Check if the entering collider has a specific tag
+        if (other.CompareTag("GravZone"))
+        {
+            _gravZone = false;
+        }
+    }
     void Update()
     {
 
@@ -74,6 +91,16 @@ public class PlayerControls : MonoBehaviour
             PartEngaged(_eng);
             Debug.Log("pressed");
         }
+        if (Input.GetButtonDown("Fire1"))
+        {
+            SideBurst(1);
+
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            SideBurst(-1);
+
+        }
         if (Input.GetKeyUp(KeyCode.W))
         {
             PartDisEngaged(_eng);
@@ -81,11 +108,9 @@ public class PlayerControls : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.A))//replace with general input later
         {
-            SideBurst(1);
         }
         if (Input.GetKeyDown(KeyCode.D))//replace with general input later
         {
-            SideBurst(-1);
         }
 
     }
@@ -108,14 +133,14 @@ public class PlayerControls : MonoBehaviour
         if (Physics.Raycast(transform.position, Vector3.down, out hit))
         {
             //try to make code where it's always just aiming to reach that certain range, instead of snapping to a certain position
-            if(hit.distance > _agFloat && hit.distance < _agFloat+1f)
+            if(hit.distance > _agFloat && hit.distance < _agFloat+1f || _gravZone)
             {
                 Vector3 newPos = transform.position;
                 newPos.y = (hit.point + Vector3.up * _agFloat).y;
                 transform.position = Vector3.Slerp(transform.position, newPos, .1f);
             }
 
-            if(hit.distance > _agFloat + 1f)
+            if(hit.distance > _agFloat + 2f && !_gravZone)
             {
                 _p.AddForce(0f,(-200f) * Time.deltaTime,0f);
             }

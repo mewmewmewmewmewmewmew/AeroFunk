@@ -77,8 +77,11 @@ public class PerlinNoiseGen : MonoBehaviour
         }*/
         if(!pillarsCreated)
         {
-            pillarsCreated=true;
-            CreatePillars();
+            if (pillar!=null)
+            {
+                pillarsCreated = true;
+                CreatePillars();
+            }
         }
         else
         {

@@ -13,5 +13,6 @@
 {2f518e94-38ac-4fad-b676-c7a37644cb55} event:/RadioAnouncementLoop
 {17e9092a-0d9d-433d-b39e-68d61b3c8a0d} event:/SideBurst
 {82e5b3f9-2a79-44b1-a136-5d7dc35f7fd0} event:/SoundTrack
+{7d018ff4-dda1-4152-b52c-a9c80c796ab7} event:/Tunnel
 {34f9451a-f070-42c3-a921-03af3d153ddb} event:/UI Tick
 {d8cb8cdf-e0fb-4599-9ba2-a1ae4c9778fa} parameter:/AcceleratorState
