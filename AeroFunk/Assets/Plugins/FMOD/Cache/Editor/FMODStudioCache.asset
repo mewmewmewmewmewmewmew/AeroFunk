@@ -27,6 +27,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 61444
+--- !u!114 &-8096317372097841804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OnClickAlt
+  m_EditorClassIdentifier: 
+  Path: event:/OnClickAlt
+  Guid:
+    Data1: -1440605091
+    Data2: 1255243780
+    Data3: -1188449103
+    Data4: 989305644
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 585
+--- !u!114 &-7215968361303495966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OnClickPositive
+  m_EditorClassIdentifier: 
+  Path: event:/OnClickPositive
+  Guid:
+    Data1: -2129570102
+    Data2: 1098315794
+    Data3: 681090239
+    Data4: -1700470212
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 585
 --- !u!114 &-5284204855075135871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,10 +205,10 @@ MonoBehaviour:
   Path: ../AeroFunkAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638409083214766550
+  lastModified: 638411407404392925
   FileSizes:
   - Name: Desktop
-    Value: 8378176
+    Value: 8648992
   Exists: 1
 --- !u!114 &-157824577885212409
 MonoBehaviour:
@@ -207,12 +261,17 @@ MonoBehaviour:
   - {fileID: -2973407349103027101}
   - {fileID: 4706708384435925423}
   - {fileID: 4921193781965786812}
+  - {fileID: 4392321419591912829}
+  - {fileID: 2719565349162596685}
+  - {fileID: -7215968361303495966}
+  - {fileID: 1390777649372090136}
+  - {fileID: -8096317372097841804}
   EditorParameters: []
   MasterBanks:
   - {fileID: -510259604903283571}
   StringsBanks:
   - {fileID: 1992302050951442078}
-  cacheTime: 638409083214791440
+  cacheTime: 638411407404417859
   cacheVersion: 131609
 --- !u!114 &335172922955786946
 MonoBehaviour:
@@ -241,6 +300,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1065
+--- !u!114 &1390777649372090136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OnClickNegative
+  m_EditorClassIdentifier: 
+  Path: event:/OnClickNegative
+  Guid:
+    Data1: -705803312
+    Data2: 1164563631
+    Data3: 1907863435
+    Data4: 350626580
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 585
 --- !u!114 &1992302050951442078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,11 +342,38 @@ MonoBehaviour:
   Path: ../AeroFunkAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638409083214791440
+  lastModified: 638411407404417859
   FileSizes:
   - Name: Desktop
-    Value: 1328
+    Value: 1546
   Exists: 1
+--- !u!114 &2719565349162596685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MenuLoop
+  m_EditorClassIdentifier: 
+  Path: event:/MenuLoop
+  Guid:
+    Data1: -265840293
+    Data2: 1232785400
+    Data3: 1782752701
+    Data4: 1130038354
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19268
 --- !u!114 &3113042958072048359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +401,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1022
+--- !u!114 &4392321419591912829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OnHover
+  m_EditorClassIdentifier: 
+  Path: event:/OnHover
+  Guid:
+    Data1: -250893407
+    Data2: 1155845988
+    Data3: -1825230715
+    Data4: -778395512
+  Banks:
+  - {fileID: -510259604903283571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &4706708384435925423
 MonoBehaviour:
   m_ObjectHideFlags: 0
