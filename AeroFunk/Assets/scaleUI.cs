@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class scaleUI : MonoBehaviour
 {
     [SerializeField] RectTransform rt;
+    [SerializeField] GameObject textObj;
+    public List<RectTransform> menuOptions = new List<RectTransform>();
+
+    Outline tOutline;
 
     [System.Serializable]
     public struct Scale 
@@ -14,6 +19,8 @@ public class scaleUI : MonoBehaviour
         public float newWidth;
         public float newHeight;
     }
+
+    [System.Serializable]
     public struct TranslateInput
     {
         public float newX;
@@ -26,25 +33,29 @@ public class scaleUI : MonoBehaviour
     public AnimationCurve translateCurve;
 
 
-    public float duration = 1f;
+    public float scaleDuration = 0.2f;
+    public float translateDuration = 1f;
 
-    [SerializeField] bool onUIHover;
     IEnumerator currentRoutine;
 
+
+    Vector2 startPosition;
     // Start is called before the first frame update
     void Start()
     {
         //rt = GetComponent<RectTransform>();
         currentRoutine = ScaleGUIToCurve(hoverExitScale);
         StartCoroutine(currentRoutine);
+        tOutline = textObj.GetComponent<Outline>();
+        startPosition = rt.position;
     }
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        /*if (Input.GetButtonDown("Fire1"))
         {
-
-        }
+            TranslateMouseDown();
+        }*/
     }
 
     public void ScaleGUI(Scale scaleInput)
@@ -97,25 +108,26 @@ public class scaleUI : MonoBehaviour
     }
     public void TranslateMouseDown()
     {
+        StopAllCoroutines();
         currentRoutine = null;
         currentRoutine = TranslateGUIToCurve(pressedTranslate);
-        StartCoroutine(ScaleGUIToCurve(hoverExitScale));
-
+        StartCoroutine(TranslateGUIToCurve(pressedTranslate));
     }
 
     public IEnumerator ScaleGUIToCurve(Scale scaleInput)
     {
         float elapsedTime = 0f;
 
-        while (elapsedTime < duration)
+        while (elapsedTime < scaleDuration)
         {
+
             elapsedTime += Time.deltaTime;
-            float _curve = scaleCurve.Evaluate(elapsedTime/duration);
+            float _curve = scaleCurve.Evaluate(elapsedTime/scaleDuration);
             Debug.Log(elapsedTime);
 
-            // Apply the curve value to the object's position
-            //rt.sizeDelta = new Vector2(rt.rect.width * (_curve * strMod), rt.rect.height * (_curve * strMod));
+
             rt.sizeDelta = new Vector2((_curve * scaleInput.newWidth),(_curve * scaleInput.newHeight));
+
             yield return null; // Wait for the next frame
         }
         rt.sizeDelta = new Vector2(scaleCurve.Evaluate(1f)* scaleInput.newWidth, scaleCurve.Evaluate(1f)* scaleInput.newHeight);
@@ -123,18 +135,18 @@ public class scaleUI : MonoBehaviour
     public IEnumerator TranslateGUIToCurve(TranslateInput translateInput)
     {
         float elapsedTime = 0f;
-
-        while (elapsedTime < duration)
+        //Vector2 startPosition = rt.position;
+        while (elapsedTime < translateDuration)
         {
             elapsedTime += Time.deltaTime;
-            float _curve = scaleCurve.Evaluate(elapsedTime / duration);
+            float _curve = translateCurve.Evaluate(elapsedTime / translateDuration);
             Debug.Log(elapsedTime);
 
-            // Apply the curve value to the object's position
-            //rt.sizeDelta = new Vector2(rt.rect.width * (_curve * strMod), rt.rect.height * (_curve * strMod));
-            rt.anchoredPosition = new Vector2 ( _curve * translateInput.newX, _curve * translateInput.newY);
+
+            rt.position = new Vector3 (startPosition.x + (_curve * translateInput.newX), rt.position.y /*startPosition.y + (_curve * translateInput.newY)*/,rt.position.z);
+
             yield return null; // Wait for the next frame
         }
-        rt.sizeDelta = new Vector2(scaleCurve.Evaluate(1f) * translateInput.newX, scaleCurve.Evaluate(1f) * translateInput.newY);
+        rt.position = new Vector3(startPosition.x + (translateCurve.Evaluate(1f) * translateInput.newX), rt.position.y/*startPosition.y + (translateCurve.Evaluate(1f) * translateInput.newY)*/, rt.position.z);
     }
 }
