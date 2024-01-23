@@ -34,7 +34,7 @@ public class Shake : MonoBehaviour
             float strength = curve.Evaluate(elapsedTime / duration);
             transform.position = startingPosition + Random.insideUnitSphere * strength;
             yield return null;
-        }
+            }
 
         transform.position = startingPosition;
     }
