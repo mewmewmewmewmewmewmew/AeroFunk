@@ -205,7 +205,7 @@ MonoBehaviour:
   Path: ../AeroFunkAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638415393504231966
+  lastModified: 638416458589830797
   FileSizes:
   - Name: Desktop
     Value: 8648992
@@ -271,7 +271,7 @@ MonoBehaviour:
   - {fileID: -510259604903283571}
   StringsBanks:
   - {fileID: 1992302050951442078}
-  cacheTime: 638415393504242008
+  cacheTime: 638416458589845956
   cacheVersion: 131609
 --- !u!114 &335172922955786946
 MonoBehaviour:
@@ -342,7 +342,7 @@ MonoBehaviour:
   Path: ../AeroFunkAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638415393504242008
+  lastModified: 638416458589845956
   FileSizes:
   - Name: Desktop
     Value: 1546
