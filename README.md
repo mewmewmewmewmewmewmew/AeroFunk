@@ -9,3 +9,6 @@
 
 # Visual Exploration
 https://www.figma.com/file/KGjE0utdEeKT4zBd0xXWMu/AeroFunk-Board?type=whiteboard&node-id=0%3A1&t=QkIOCSEYybK9dqCZ-1
+![image](https://github.com/mewmewmewmewmewmewmew/AeroFunk/assets/125397197/71bedae1-0b4c-497f-9cd7-7ccb18417de2)
+![image](https://github.com/mewmewmewmewmewmewmew/AeroFunk/assets/125397197/c75a92e6-8fbc-4604-97fb-d3bc727eb053)
+
