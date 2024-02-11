@@ -370,6 +370,7 @@
 "Assets/PlayerControls.cs"
 "Assets/RotateOverTime.cs"
 "Assets/scaleUI.cs"
+"Assets/SceneChange.cs"
 "Assets/Shake.cs"
 "Assets/SineWaveDeform.cs"
 "Assets/SinTransform.cs"
